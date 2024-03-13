@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "some-project"
+version = "0.1.0"
+description = ""
+authors = ["fiftinmen <fiftin.men@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colorama = "^0.4.6"
+pytz = "^2024.1"
+
+[tool.poetry.scripts]
+say-hello = "some_project.scripts.say_hello:main"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.22.2"
+flake8 = "^7.0.0"
+tree = "^0.2.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
